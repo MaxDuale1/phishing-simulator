@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Security Alert – Immediate Action Required</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <img src="assets/fake-logo.png" alt="FakeCorp Logo" class="logo" />
+
+    <div class="email-preview">
+      <p><strong>From:</strong> IT Department &lt;support@fak3corp-security.com&gt;</p>
+      <p><strong>Subject:</strong> Urgent Account Verification Needed</p>
+      <hr />
+      <p>Dear User,</p>
+      <p>We noticed unusual login activity in your account. Please verify your credentials immediately to avoid suspension.</p>
+      <p><a href="#" id="fake-link">Click here to verify</a></p>
+      <p>Thank you,<br />IT Security Team</p>
+    </div>
+
+    <form id="phish-form">
+      <label for="email">Re-enter your email to verify:</label>
+      <input type="email" id="email" placeholder="your@email.com" required />
+      <button type="submit">Submit</button>
+    </form>
+
+    <button id="reportBtn" class="report">Report as Phishing</button>
+    <p id="feedback" class="feedback"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
